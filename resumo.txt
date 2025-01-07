@@ -1,0 +1,19 @@
+Uma pagina inicial para anatomia com link para 3 outras paginas de temas:
+-esplacnologia
+-locomotor
+-neuro
+
+Para esplacnologia:
+
+-cara
+-cuello
+-torax 1
+-mediastino
+-abdomen 1
+-abdomen supramesolico
+-abdomen inframesolico y retroperitoneo
+-pelvis femenina y masculina 
+-pelvis y periné
+-nervio vago
+
+
