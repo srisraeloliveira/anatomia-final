@@ -455,3 +455,89 @@ button#check:active {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     /* Reduz a sombra ao clicar */
 }
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    header nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    .module-container a, 
+    .submodules-container a {
+        width: 100%;
+        /* Ocupar toda a largura disponível */
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    .submodules-container a {
+        height: auto;
+        /* Ajustar a altura para o conteúdo */
+    }
+
+    .card-container a {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    #navigation button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .flashcard {
+        margin: 10px;
+    }
+
+    textarea {
+        width: 100%;
+        /* Ajustar para dispositivos menores */
+    }
+}
+
+/* Estilos para telas ainda menores */
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem;
+    }
+
+    header nav {
+        flex-direction: column;
+        /* Transformar o menu em um layout vertical */
+    }
+
+    header nav a {
+        margin: 5px 0;
+    }
+
+    .module-container, 
+    .submodules-container, 
+    .card-container {
+        flex-direction: column;
+        /* Forçar os itens a ficarem em coluna */
+        gap: 10px;
+    }
+
+    .module-container a, 
+    .submodules-container a {
+        font-size: 0.8rem;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    main p {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
