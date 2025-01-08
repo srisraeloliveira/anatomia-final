@@ -456,28 +456,38 @@ button#check:active {
     /* Reduz a sombra ao clicar */
 }
 
-/* Estilos para dispositivos móveis */
+/* Ajustar header e footer para ocupar toda a largura */
+header, footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Centralizar o conteúdo do main */
+main {
+    margin: 2rem auto;
+    padding: 1.5rem;
+    box-sizing: border-box;
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos responsivos */
 @media (max-width: 768px) {
     header nav a {
-        margin: 0 10px;
-        font-size: 0.9rem;
+        display: block;
+        margin: 10px 0; /* Espaçamento entre os links no mobile */
     }
 
     main {
+        width: 90%; /* Reduz a largura para dispositivos menores */
         padding: 1rem;
     }
 
-    .module-container a, 
+    .module-container a,
     .submodules-container a {
-        width: 100%;
-        /* Ocupar toda a largura disponível */
+        width: 100%; /* Links ocupam toda a largura */
+        font-size: 1rem; /* Ajusta o tamanho da fonte */
+        height: auto; /* Altura automática */
         padding: 15px;
-        font-size: 1rem;
-    }
-
-    .submodules-container a {
-        height: auto;
-        /* Ajustar a altura para o conteúdo */
     }
 
     .card-container a {
@@ -485,59 +495,27 @@ button#check:active {
         height: 50px;
         font-size: 1rem;
     }
-
-    #navigation button {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    .flashcard {
-        margin: 10px;
-    }
-
-    textarea {
-        width: 100%;
-        /* Ajustar para dispositivos menores */
-    }
 }
 
-/* Estilos para telas ainda menores */
+/* Ajuste para telas muito pequenas */
 @media (max-width: 480px) {
-    header {
+    header, footer {
+        padding: 1rem; /* Ajusta o padding */
+    }
+
+    main {
+        margin: 1rem auto;
         padding: 0.5rem;
     }
 
-    header nav {
-        flex-direction: column;
-        /* Transformar o menu em um layout vertical */
-    }
-
-    header nav a {
-        margin: 5px 0;
-    }
-
-    .module-container, 
-    .submodules-container, 
-    .card-container {
-        flex-direction: column;
-        /* Forçar os itens a ficarem em coluna */
-        gap: 10px;
-    }
-
-    .module-container a, 
+    .module-container a,
     .submodules-container a {
-        font-size: 0.8rem;
+        font-size: 0.9rem; /* Reduz o tamanho da fonte */
     }
 
-    main h1 {
-        font-size: 1.5rem;
-    }
-
-    main p {
-        font-size: 1rem;
-    }
-
-    footer {
+    .card-container a {
+        width: 40px;
+        height: 40px;
         font-size: 0.8rem;
     }
 }
